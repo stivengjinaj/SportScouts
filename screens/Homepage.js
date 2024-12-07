@@ -4,17 +4,7 @@ import {Ionicons} from "@expo/vector-icons";
 import {exploreFacilitiesString, findScoutString, welcomeMessageString} from "../miscs/Strings";
 import { useNavigation } from '@react-navigation/native';
 import {Spacer} from "../miscs/Spacer";
-
-function CustomButton({ navigation, title, destination, buttonStyle, textStyle }) {
-    return (
-        <TouchableOpacity
-            style={[styles.button, buttonStyle]}
-            onPress={() => navigation.navigate(destination)}
-        >
-            <Text style={[styles.buttonText, textStyle]}>{title}</Text>
-        </TouchableOpacity>
-    );
-}
+import {CustomButton} from "../miscs/CustomButton";
 
 export default function Homepage() {
     const [selectedValue, setSelectedValue] = useState("English");
@@ -69,7 +59,7 @@ export default function Homepage() {
             <View style={styles.centeredContainer}>
                 <Text style={styles.welcome}>{selectedValue === "English" ? welcomeMessageString.English : welcomeMessageString.Italian}</Text>
 
-                <Spacer margin={30}/>
+                <Spacer marginVertical={30}/>
 
                 <CustomButton
                     navigation={navigation}
@@ -79,7 +69,7 @@ export default function Homepage() {
                     textStyle={{fontSize: 20}}
                 />
 
-                <Spacer margin={10}/>
+                <Spacer marginVertical={10}/>
 
                 <CustomButton
                     navigation={navigation}
