@@ -33,7 +33,7 @@ const styles = {
         elevation: 10,
     },
     buttonText: {
-        fontFamily: 'Itim',
+        fontFamily: 'itim',
         color: 'black',
     },
     disabledButton: {

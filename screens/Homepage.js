@@ -96,9 +96,9 @@ const styles = StyleSheet.create({
         paddingTop: 50,
     },
     welcome: {
+        fontFamily: 'itim',
         paddingTop: 100,
         fontSize: 40,
-        fontFamily: 'Itim',
         textAlign: 'center',
     },
     topbar: {
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
         elevation: 10,
     },
     buttonText: {
-        fontFamily: 'Itim',
+        fontFamily: 'itim',
         color: 'black',
     },
 });
