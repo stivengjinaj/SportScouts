@@ -66,7 +66,12 @@ const RootStack = createNativeStackNavigator({
                 headerShown: false,
             }
         },
-        FindScout: FindScout,
+        FindScout: {
+            screen: FindScout,
+            options: {
+                headerShown: false,
+            }
+        },
     },
 });
 
@@ -83,6 +88,7 @@ export default function App() {
               <RootStack.Screen
                   name="FindScout"
                   component={FindScout}
+                    options={{ headerShown: false }}
               />
           </RootStack.Navigator>
       </NavigationContainer>
