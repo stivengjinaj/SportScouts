@@ -1,8 +1,8 @@
 import {View} from "react-native";
 
-export function Spacer({margin}) {
+export function Spacer({marginVertical, marginHorizontal}) {
     return (
-        <View style={{marginVertical: margin}}>
+        <View style={{marginVertical: marginVertical, marginHorizontal: marginHorizontal}}>
 
         </View>
     );
